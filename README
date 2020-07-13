@@ -24,7 +24,7 @@ Installation:
 Easy Install (For users who HAVE NOT updated the Tevo Tornado Cura profile to
 custom settings, bed sizes, etc.):
 
-1. Unzip the downloaded folder, "TevoTornadoCura.zip".
+1. Unzip the downloaded folder, "TevoTornadoCuraBedPack-1.X.zip".
 2. Copy the sub-folder, "resources", to the root of your Cura installation. This
    typically is located at "C:\Program Files\Ultimaker Cura X.X\". Accept the
    file "tevo_tornado.def.json" to be overwritten.
@@ -35,7 +35,7 @@ custom settings, bed sizes, etc.):
 Advanced Install (For users who (might) have customized their Tevo Tornado Cura
 profile):
 
-1. Unzip the downloaded folder, "TevoTornadoCura.zip".
+1. Unzip the downloaded folder, "TevoTornadoCuraBedPack-1.X.zip".
 2. Copy the file "tevobed.png" (under the downloaded and unzipped sub-folder
    "\resources\images\") to "\Ultimaker Cura X.X\resources\images\".
 3. Copy the file "tevo_tornado.obj" (under the downloaded and unzipped
