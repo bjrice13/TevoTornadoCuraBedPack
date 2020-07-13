@@ -1,0 +1,85 @@
+Thank you for downloading the Tevo Tornado Print Bed Pack for Cura.
+
+
+Disclaimer:
+-----------
+
+These files are provided for free without warranty under the GNU General Public
+License v3.0. The creator of these files is not liable for any damage to, or
+caused from, your 3D Printer. By installing these files, you, the user, DO SO AT
+YOUR OWN RISK. Please remember to prioritize safety when using 3D Printers!
+
+For security reasons, please only install these files if you downloaded them
+directly from https://github.com/bjrice13/TevoTornadoCuraBedPack. Using files
+downloaded from a third party increases the risk of the files containing malware
+or modified printer settings, which could lead to bad or dangerous prints!
+
+These files have been tested on Cura 4.4.1 and Cura 4.6.1. Other versions of
+Cura have not been tested with these modifications, and may not work.
+
+
+Installation:
+-------------
+
+Easy Install (For users who HAVE NOT updated the Tevo Tornado Cura profile to
+custom settings, bed sizes, etc.):
+
+1. Unzip the downloaded folder, "TevoTornadoCura.zip".
+2. Copy the sub-folder, "resources", to the root of your Cura installation. This
+   typically is located at "C:\Program Files\Ultimaker Cura X.X\". Accept the
+   file "tevo_tornado.def.json" to be overwritten.
+3. Launch Cura and inspect that the Tevo Tornado profile has automatically
+   updated the bed image and bed model.
+
+
+Advanced Install (For users who (might) have customized their Tevo Tornado Cura
+profile):
+
+1. Unzip the downloaded folder, "TevoTornadoCura.zip".
+2. Copy the file "tevobed.png" (under the downloaded and unzipped sub-folder
+   "\resources\images\") to "\Ultimaker Cura X.X\resources\images\".
+3. Copy the file "tevo_tornado.obj" (under the downloaded and unzipped
+   sub-folder "\resources\meshes\") to "\Ultimaker Cura X.X\resources\meshes\".
+4. Open the file
+   "\Ultimaker Cura X.X\resources\definitions\tevo_tornado.def.json" with a
+   IDE or text editor.
+5. Under "metadata", insert the following three lines:
+
+   "platform": "tevo_tornado.obj",
+   "platform_texture": "tevobed.png",
+   "platform_offset": [0, -1, 0],
+
+6. The file should now look something like:
+
+{
+    "name": "Tevo Tornado",
+    "version": 2,
+    "inherits": "fdmprinter",
+    "metadata": {
+        "visible": true,
+        "author": "nean",
+        "manufacturer": "Tevo",
+        "file_formats": "text/x-gcode",
+        "platform": "tevo_tornado.obj",
+        "platform_texture": "tevobed.png",
+        "platform_offset": [0, -1, 0],
+        "has_materials": true,
+        "machine_extruder_trains": {
+            "0": "tevo_tornado_extruder_0"
+        }
+    },
+
+
+... etc. etc. ...
+
+7. Launch Cura and inspect that the Tevo Tornado profile has automatically
+   updated the bed image and bed model.
+
+
+Contact
+-------
+
+For updates, issues, or comments, please refer to the project's repository at
+https://github.com/bjrice13/TevoTornadoCuraBedPack.
+
+Happy Printing!
